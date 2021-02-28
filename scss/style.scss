@@ -1,10 +1,6 @@
 @import "fonts";
 @import "vars";
-
-*, 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+@import "mixins";
+@import "global";
 
 // @import 'blocks/header.scss';

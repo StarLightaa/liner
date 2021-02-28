@@ -1,0 +1,50 @@
+@mixin list-normalize {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin font-Montserrat() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font-CoreSans15() {
+    font-family: 'Core Sans C 15';
+}
+
+@mixin font-CoreSans25() {
+    font-family: 'Core Sans C 25';
+}
+
+@mixin font-CoreSans35() {
+    font-family: 'Core Sans C 35';
+}
+
+@mixin font-CoreSans45() {
+    font-family: 'Core Sans C 45';
+}
+
+@mixin font-CoreSans55() {
+    font-family: 'Core Sans C 55';
+}
+
+@mixin font-CoreSans65() {
+    font-family: 'Core Sans C 65';
+}
+
+@mixin font-CoreSans75() {
+    font-family: 'Core Sans C 75';
+}
+
+@mixin font-CoreSans85() {
+    font-family: 'Core Sans C 85';
+}
+
+@mixin font-CoreSans95() {
+    font-family: 'Core Sans C 95';
+}
+
+
+
+
+
