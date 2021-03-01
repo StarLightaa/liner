@@ -1,0 +1,31 @@
+.social {
+    display: flex;
+    @include list-normalize();
+
+    &__item {
+        width: 16px;
+        height: 16px;
+        & + & {
+            margin-left: 15px;
+        }
+    }
+
+    &__link {
+        @include link-normalize();
+        &:focus > .social__icon {
+            .toFill {
+                transition: fill .3s linear;
+                fill: $color-orange;
+            }
+        }
+    }
+
+    &__icon {
+        &:hover {
+            .toFill {
+                transition: fill .3s linear;
+                fill: $color-orange;
+            }
+        }
+    }
+}

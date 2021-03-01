@@ -1,7 +1,20 @@
-@mixin list-normalize {
+@mixin list-normalize() {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@mixin link-normalize() {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: all .3s linear;
+
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $color-orange;
+    }
 }
 
 @mixin font-Montserrat() {

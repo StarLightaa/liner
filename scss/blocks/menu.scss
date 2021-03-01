@@ -1,0 +1,25 @@
+.menu {
+    &__list {
+        display: flex;
+        @include list-normalize();
+
+        @media (max-width: $bp-l-max) {
+            display: none;
+        }
+    }
+
+    &__item {
+        & + & {
+            margin-left: 60px;
+        }
+        @media (max-width: $bp-xl-max) {
+            & + & {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    &__link {
+        @include link-normalize();
+    }
+}
