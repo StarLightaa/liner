@@ -1,0 +1,99 @@
+.footer {
+    &__inner {
+        margin-bottom: 80px;
+        @media (max-width: $bp-ipad-max) {
+            margin-bottom: 60px;
+        }
+        @media (max-width: $bp-sm-max) {
+            margin-bottom: 30px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #AFB9C3;
+        padding-bottom: 70px;
+        @media (max-width: $bp-ipad-max) {
+            padding-bottom: 40px;
+        }
+        @media (max-width: $bp-sm-max) {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        &-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 50px;
+            @media (max-width: $bp-sm-max) {
+                row-gap: 30px;
+                align-items: flex-start;
+            }
+        }
+        &-link {
+            &--office {
+                @media (max-width: $bp-l-max) {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    &__title {
+        @include font-CoreSans75();
+        font-size: 80px;
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: 0.01em;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: $bp-l-max) {
+            font-size: 40px;
+        }
+        @media (max-width: 700px) {
+            font-size: 28px;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            @media (max-width: $bp-l-max) {
+                justify-content: flex-end;
+            }
+            @media (max-width: $bp-sm-max) {
+                display: none;
+            }
+        }
+    }
+    &__description {
+        @include font-CoreSans35();
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+        color: $color-orange;
+        align-self: flex-end;
+
+        @media (max-width: $bp-l-max) {
+            font-size: 16px;
+        }
+        @media (max-width: 700px) {
+            font-size: 14px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 100px;
+        @media (max-width: $bp-l-max) {
+            flex-direction: column;
+        }
+        @media (max-width: $bp-ipad-max) {
+            margin-bottom: 60px;
+        }
+        @media (max-width: $bp-sm-max) {
+            margin-bottom: 40px;
+        }
+    }
+}

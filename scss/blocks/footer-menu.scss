@@ -1,0 +1,40 @@
+.footer__menu {
+    flex-basis: 50%;
+    @media (max-width: $bp-l-max) {
+        order: 2;
+        flex-basis: 100%;
+        padding: 35px 0;
+        border-top: 1px solid $color-gray;
+        border-bottom: 1px solid $color-gray;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @include list-normalize(); 
+        row-gap: 15px;
+        @media (max-width: $bp-l-max) {
+            row-gap: 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @media (max-width: $bp-sm-max) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        @include font-CoreSans45();
+        font-size: 16px;
+        line-height: 1;
+        @media (max-width: $bp-l-max) {
+            font-size: 14px;
+        }
+    }
+
+    &__link {
+        @include link-normalize();
+    }
+}

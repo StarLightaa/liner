@@ -1,17 +1,28 @@
 .social {
     display: flex;
+    column-gap: 15px;
     @include list-normalize();
 
     &__item {
+        display: inline-block;
         width: 16px;
         height: 16px;
-        & + & {
-            margin-left: 15px;
-        }
+    
+        vertical-align: middle;
+        text-align: center;
+        // & + & {
+        //     margin-left: 15px;
+        // }
     }
 
     &__link {
         @include link-normalize();
+        display: block;
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+        line-height: 1;
+    
         &:focus > .social__icon {
             .toFill {
                 transition: fill .3s linear;
