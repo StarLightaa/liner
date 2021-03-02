@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.page {
+    height: 100%;
+}
+
 .page__body {
     @include font-Montserrat();
     font-style: normal;
@@ -11,6 +15,10 @@
     line-height: 1.5;
     background-color: $color-white;
     color: $color-blue;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .container {
