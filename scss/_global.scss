@@ -39,6 +39,10 @@
     }
 }
 
+.main__wrapper {
+    position: relative;
+}
+
 .page__title {
     @include font-CoreSans65();
     font-size: 80px;

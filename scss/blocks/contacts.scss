@@ -1,0 +1,108 @@
+.contacts__top {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $bp-sm-max) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+    &__item {
+        .info__label {
+            padding: 0;
+            margin: 0;
+            @include font-CoreSans35();
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            text-transform: lowercase;
+            text-decoration: none;
+            color: inherit;
+            @media (max-width: $bp-sm-max) {
+                font-size: 14px;
+            }
+        }
+        .info__text {
+            padding: 0;
+            margin: 0;
+            @include font-CoreSans55();
+            font-style: normal;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            text-transform: lowercase;
+            text-decoration: none;
+            color: inherit;
+            @media (max-width: $bp-xl-max) {
+                font-size: 18px;
+            }
+            @media (max-width: $bp-sm-max) {
+                font-size: 16px;
+            }
+        }
+        .info__phones {
+            display: flex;
+            align-items: center;
+            column-gap: 35px;
+        }
+    }
+
+    &__shedule {
+        .shedule__label {
+            @include font-CoreSans65();
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 1.5;
+            @media (max-width: $bp-ipad-max) {
+                font-size: 20px;
+            }
+        }
+        .shedule__text {
+            @include font-CoreSans45();
+            font-size: 16px;
+            line-height: 1.5;
+            text-transform: lowercase;
+            @media (max-width: $bp-sm-max) {
+                font-size: 14px;
+            }
+            
+            &-time {
+                @include font-CoreSans55();
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: lowercase;
+                @media (max-width: $bp-ipad-max) {
+                    font-size: 18px;
+                }
+                @media (max-width: $bp-sm-max) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.contacts-map {
+    &__img {
+        object-fit: cover;
+        border-radius: 50%;
+        max-width: 769px;
+        max-height: 769px;
+        flex-shrink: 1;
+    }
+}
+
+.contacts__bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    @media (max-width: 950px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -9,3 +9,33 @@ $(function() {
         mobileMenu.classList.toggle('mobile-menu--open');
     });
 })
+
+const documentsSwiper = new Swiper('.swiper-container-documents', {
+    slidesPerView: 'auto',
+    spaceBetween: 75,
+    keyboard: { enabled: true,},
+    
+    breakpoints: {
+        768: {
+            slidesPerView: 'auto',
+            spaceBetween: 75,
+            // slidesPerGroup: 2,
+            // slidesPerGroupSkip: 1,
+            
+        }
+    },
+    
+    slideActiveClass: 'document-swiper-slide-active',
+  
+    pagination: {
+      el: '.documents-swiper-pagination',
+      clickable: true,
+      bulletClass: 'documents-swiper-pagination-bullet',
+      bulletActiveClass: 'documents-swiper-pagination-bullet-active'
+    },
+  
+    navigation: {
+      nextEl: '.documents-swiper-button-next',
+      prevEl: '.documents-swiper-button-prev',
+    },
+});
