@@ -3,6 +3,27 @@
     column-gap: 15px;
     @include list-normalize();
 
+    &--desktop {
+        flex-direction: column;
+        row-gap: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateX(-50%);
+        @media (max-width: $bp-xl-max) {
+            left: 40px;
+        }
+        @media (max-width: $bp-l-max) {
+            left: 30px;
+        }
+        @media (max-width: $bp-ipad-max) {
+            left: 25px;
+        }
+        @media (max-width: $bp-sm-max) {
+            display: none;
+        }
+    }
+
     &__item {
         display: inline-block;
         width: 16px;

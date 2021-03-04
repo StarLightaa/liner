@@ -23,8 +23,20 @@
 
 .container {
     max-width: 1700px;
-    padding: 0 20px;
+    padding: 0 100px;
     margin: 0 auto;
+    @media (max-width: $bp-xl-max) {
+        padding: 0 80px;
+    }
+    @media (max-width: $bp-l-max) {
+        padding: 0 60px;
+    }
+    @media (max-width: $bp-ipad-max) {
+        padding: 0 50px;
+    }
+    @media (max-width: $bp-sm-max) {
+        padding: 0 20px;
+    }
 }
 
 .page__title {
