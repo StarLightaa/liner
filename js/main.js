@@ -10,6 +10,25 @@ $(function() {
     });
 })
 
+const mainPageSwiper = new Swiper('.swiper-container-main', {
+    slidesPerView: 1,
+    keyboard: { enabled: true,},
+    // breakpoints: {
+    //     768: {
+    //         slidesPerView: 'auto',
+    //         spaceBetween: 75,
+    //         // slidesPerGroup: 2,
+    //         // slidesPerGroupSkip: 1,
+            
+    //     }
+    // },
+  
+    navigation: {
+      nextEl: '.main-swiper-button-next',
+      prevEl: '.main-swiper-button-prev',
+    },
+});
+
 const documentsSwiper = new Swiper('.swiper-container-documents', {
     slidesPerView: 'auto',
     spaceBetween: 75,

@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
 .page {
     height: 100%;
 }
@@ -19,6 +30,14 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+
+    &--nofooter {
+        grid-template-rows: auto 1fr;
+    }
+}
+
+.main--nofooter {
+    align-self: flex-end;
 }
 
 .container {

@@ -5,17 +5,17 @@
 	{{> head }} 
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--nofooter">
 	{{> header }}
 	
-	<main class="main">
+	<main class="main--nofooter">
 		<div class="container">
-			{{> body }}
+			<div class="main__wrapper">
+				{{> socials }}
+				{{> body }}
+			</div>
 		</div>
 	</main>
-
-    {{> footer }}
-
 	<script src="js/main.min.js"></script>
 </body>
 
