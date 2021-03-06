@@ -29,6 +29,25 @@ const mainPageSwiper = new Swiper('.swiper-container-main', {
     },
 });
 
+const aboutTendencies = new Swiper('.swiper-container-about-tendencies', {
+    slidesPerView: 1,
+    keyboard: { enabled: true,},
+    // breakpoints: {
+    //     768: {
+    //         slidesPerView: 'auto',
+    //         spaceBetween: 75,
+    //         // slidesPerGroup: 2,
+    //         // slidesPerGroupSkip: 1,
+            
+    //     }
+    // },
+  
+    navigation: {
+      nextEl: '.about-tendencies-swiper-button-next',
+      prevEl: '.about-tendencies-swiper-button-prev',
+    },
+});
+
 const documentsSwiper = new Swiper('.swiper-container-documents', {
     slidesPerView: 'auto',
     spaceBetween: 75,
